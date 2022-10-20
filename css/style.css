@@ -1,0 +1,246 @@
+@import url('reset.css');
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 200%;
+	position: relative;
+	background: url("../img/building.jpg")0 0/cover no-repeat;
+}
+
+
+.header__container {
+	position: relative;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: red;
+	left: 0;
+	top: 0;
+	padding: 40px;
+	z-index: 300;
+}
+
+.header__title {
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 4px 24px black;
+}
+
+.header__fireman {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: translate(990px, -80px);
+}
+
+.header__img:hover {
+	transform: rotate(5deg);
+}
+
+.header__hat-man {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+.hat-man::after {
+	content: "";
+	background: url("../img/hat.png")0 0/cover no-repeat;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	transform: translate(10px, -80px);
+}
+
+.hat-man:hover {
+	transform: rotate(1deg);
+}
+
+.page {
+	width: 100%;
+	position: relative;
+	padding: 200px;
+}
+
+.elements__name {
+	padding: 30px;
+	font-size: 18px;
+	height: 150px;
+	width: 250px;
+	background-color: chocolate;
+	color: darkblue;
+	text-align: center;
+	border-radius: 60%;
+	border: 3px solid red;
+	position: relative;
+	left: 250px;
+	bottom: 40px;
+}
+
+.elements__mask {
+	width: 200px;
+	height: 200px;
+	background: url("../img/mask.png")0 0/cover no-repeat;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.elements__mask:hover {
+	transform: scale(1.5);
+}
+
+.elements__boots {
+	width: 200px;
+	height: 200px;
+	background: url("../img/boots.png")0 0 no-repeat;
+	background-size: contain;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.elements__boots:hover {
+	transform: skew(0deg, -10deg);
+}
+
+.elements__mittens {
+	width: 200px;
+	height: 200px;
+	background: url("../img/mittens.png") 0 0/cover no-repeat;
+	position: relative;
+	margin-bottom: 70px;
+
+}
+
+.elements__mittens:hover {
+	transform: rotateY(180deg);
+	transition: all 0.8s ease 0s;
+}
+
+.elements__axe {
+	width: 200px;
+	height: 200px;
+	background: url("../img/axe.png")0 0 no-repeat;
+	background-size: contain;
+	margin-bottom: 70px;
+}
+
+.elements__axe:hover {
+	transform: matrix(0.1, 0.1, 0.3, 0.8, 10, 3);
+}
+
+.elements__hydrant {
+	width: 200px;
+	height: 200px;
+	background: url("../img/hydrant.png")0 0/cover no-repeat;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.elements__hydrant:hover {
+	transform-origin: bottom right;
+	transform: rotate(45deg);
+}
+
+.parts__fire-hose {
+	width: 200px;
+	height: 200px;
+	background: url("../img/fire-hose.png")0 0/cover no-repeat;
+	position: absolute;
+	right: 250px;
+	bottom: 1100px;
+
+}
+
+.parts__fire-hose:hover {
+	transform-origin: 100px 40px;
+	transform: rotate(30deg);
+}
+
+.parts__one {
+	perspective: 400px;
+}
+
+.parts__hat-firefinger {
+	width: 200px;
+	height: 200px;
+	background: url("../img/hat-firefinger.png")0 0/cover no-repeat;
+	position: absolute;
+	top: 350px;
+	right: 620px;
+}
+
+.parts__hat-firefinger:hover {
+	transform: translate3d(10px, 20px, 50px)scale3d(1, 1, 0.5);
+}
+
+.parts__jacket {
+	perspective: 400px;
+	perspective-origin: center;
+}
+
+.jacket__clothes {
+	width: 200px;
+	height: 200px;
+	background: url("../img/jacket.png")0 0/cover no-repeat;
+	position: absolute;
+	bottom: 800px;
+	right: 250px;
+}
+
+.jacket__clothes:hover {
+	transform: rotateY(-180deg)
+}
+
+.parts__two {
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+
+.parts__megaphone {
+	width: 200px;
+	height: 200px;
+	background: url("../img/megaphone.png")0 0 no-repeat;
+	background-size: contain;
+	position: absolute;
+	bottom: 520px;
+	right: 280px;
+}
+
+.parts__megaphone:hover {
+	transform: rotateY(180deg);
+	transition: all 0.2s ease 0s;
+}
+
+.parts__car {
+	perspective: 400px;
+}
+
+.parts__fire-track {
+	width: 200px;
+	height: 200px;
+	background: url("../img/fire-track.png")0 0 no-repeat;
+	background-size: contain;
+	position: absolute;
+	bottom: 200px;
+	right: 250px;
+}
+
+.parts__fire-track:hover {
+	transform: rotateY(180deg);
+}
